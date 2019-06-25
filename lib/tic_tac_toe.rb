@@ -92,10 +92,15 @@ def over?(board)
 end
 
 def winner (board)
+  index = []
   index = won?(board)
+  if index == false
+    return nil
+  else
     if board[index[0]] == "X"
       return "X"
-    elsif board[index[0]] == "O"
+    else
       return "O"
     end
+  end
 end
