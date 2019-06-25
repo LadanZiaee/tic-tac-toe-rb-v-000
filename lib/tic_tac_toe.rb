@@ -102,5 +102,4 @@ def winner (board)
     else
       return "O"
     end
-  end
 end
