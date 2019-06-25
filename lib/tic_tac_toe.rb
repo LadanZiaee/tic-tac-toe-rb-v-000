@@ -106,3 +106,14 @@ def winner (board)
 end
 
 def play(board)
+  until over?(board) do
+    turn(board)
+  end
+  if won?(board) == "X"
+    return "Congratulations 'X'"
+    elsif won?(board) == "O"
+    return "Congratulations 'O'"
+  else
+    return "It's a draw!"
+  end
+end
